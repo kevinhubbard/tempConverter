@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Celsius Converter</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('form').on('submit', function(e){
+				e.preventDefault();
+				$('#output').empty();
+
+				var input = $('#degree').val();
+
+				var celsius = (input - 32) * (5/9);
+
+				$('#output').append(celsius.toFixed(1));
+
+
+			});
+		});
+	</script>
+
+</head>
+<body>
+	<div><h1>Fahrenheit to Celsius</h1><h2><span id="output"></span>&deg;C</h2><hr/>
+		<form>
+			<label for="degreeInput">&deg;Fahrenheit:</label>
+			<input id=degree type="number" name="degreeInput">
+			<input type="submit" name="calculate" value="Calculate">
+
+
+		</form>
+	</div>
+
+</body>
+</html>
