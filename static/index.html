@@ -4,22 +4,23 @@
 	<meta charset="utf-8">
 	<title>Temperature Converter</title>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="scripts/converter.js"></script>
-
+	<script type="text/javascript" src="/scripts/converter.js"></script>
+	<link rel="stylesheet" type="text/css" href="/styles/style.css">
 </head>
 <body>
-	<div><h1>Fahrenheit and Celsius Converter</h1><h2><span id="output"></span><span id="unit"></span></h2><hr/>
+	<div id='main'>
+		<h1>Fahrenheit and Celsius Converter</h1>
+		<h2 id="display"><span id="output"></span><span id="unit"></span></h2><hr/>
 		<form>
-			<label for="fahrenheit">Fahrenheit:</label>
 			<input id="fahrenheit" type="radio" name="unit" value="Fahrenheit">
-			<label for="celsius">Celsius:</label>
+			<label for="fahrenheit">Fahrenheit</label>
+			<br/>
 			<input id="celsius" type="radio" name="unit" value="Celsius">
+			<label for="celsius">Celsius</label>
 			<br/><br/>
 			<label for="degreeInput"><span id="test">(Select Current Unit)</span></label>
 			<input id=degree type="number" name="degreeInput">
 			<input type="submit" name="calculate" value="Calculate">
-
-
 		</form>
 	</div>
 
