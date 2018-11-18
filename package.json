@@ -1,0 +1,22 @@
+{
+  "name": "tempconverter",
+  "version": "1.0.0",
+  "description": "Fahrenheit and Celsius conversion app.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinhubbard/tempConverter.git"
+  },
+  "author": "Kevin H",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevinhubbard/tempConverter/issues"
+  },
+  "homepage": "https://github.com/kevinhubbard/tempConverter#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
